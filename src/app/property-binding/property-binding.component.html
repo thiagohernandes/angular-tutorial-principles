@@ -1,0 +1,7 @@
+<div align="center">
+  
+  <input [id]="myId" type="text" name="nome" value="Thiago"> <!-- $0.getAttribute('value') -->
+  <input [disabled]="habilitar" id="{{myId}}" type="text" name="nome" value="Thiago">
+  <input bind-disabled="habilitar" id="{{myId}}" type="text" name="nome" value="Thiago">
+  <button (click)="habilitarInput()">Habilitar/desabilitar</button>
+</div>
