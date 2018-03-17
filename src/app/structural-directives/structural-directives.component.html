@@ -1,0 +1,45 @@
+
+  <!--  <span *ngIf="displayName; else elseBlock">ngIf true</span>
+
+  <ng-template #elseBlock>
+    <h3>
+      Name is hidden
+    </h3>
+  </ng-template>-->
+  
+ <!-- <hr>
+
+  <span *ngIf="displayName; then thenBlock1; else elseBlock1">ngIf true</span>
+
+  <ng-template #thenBlock1>
+    <h4>Then block</h4>
+  </ng-template>
+
+  <ng-template #elseBlock1>
+    <h4>Else block</h4>
+  </ng-template> -->
+
+  <hr>
+
+  <div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">you picked red</div>
+    <div *ngSwitchCase="'blue'">you picked blue</div>
+    <div *ngSwitchCase="'green'">you picked green</div>
+    <div *ngSwitchDefault>try pick</div>
+  </div>
+
+  <div *ngFor="let item of numeros; index as idx">
+      {{idx}} - {{item}}
+  </div>
+
+  <div *ngFor="let item of numeros; last as l; first as f; index as idx">
+    {{l}} - {{idx}} - {{f}} - {{item}}
+  </div>
+
+  <div *ngFor="let item of numeros; odd as o, even as e">
+    {{e}} - {{o}} - {{item}}
+    </div>
+  
+  
+
+

@@ -1,0 +1,12 @@
+
+<div align="center">
+
+    <span *ngFor="let employe of employees">
+        {{employe.id}} - {{employe.name}} - {{employe.age}}<br/>
+    </span>
+
+    <button (click)="addEmployee()">Add new employee</button>
+
+    <span>{{errorMsg}}</span>
+
+</div>

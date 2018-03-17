@@ -1,0 +1,10 @@
+
+<div>
+  <h3>{{parentData}}</h3>
+  <h3>{{anotherData}}</h3>  
+  <div *ngFor="let nome of arrayDeNomes">
+    {{nome}}
+  </div>
+  <button (click)="fireEvent()">Fire event</button>
+
+</div>

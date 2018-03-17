@@ -14,10 +14,14 @@ export class EventBindingComponent implements OnInit {
   ngOnInit() {
   }
 
-  onClick(event){
+  onClick(event){ debugger
     alert('Hi');
     this._msg = "Hi msg --> "+event.type;
     console.log(event);
+  }
+
+  showInput(input){
+    alert(input.value);
   }
 
 }
