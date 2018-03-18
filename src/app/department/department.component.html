@@ -1,10 +1,13 @@
 
 <div align="center">
-
-    <span *ngFor="let departament of departaments">
-        {{departament.id}} - {{departament.name}}<br/>
-    </span>
-
+    Atual seleção: {{isSelected(departament)}} <br/>
+    <ul *ngFor="let departament of departaments">
+       <li> Code: {{departament.id}} ({{isCurrent(departament)}})
+        <button (click)="onSelect(departament)"
+                >{{departament.name}}</button><br/>
+        </li>        
+    </ul>
+    
     <span>{{errorMsg}}</span>
 
 </div>

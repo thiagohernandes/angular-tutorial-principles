@@ -1,0 +1,13 @@
+<div align="center">
+    Size array {{sizeDepartamentArray}} <br/>
+    Current selected id -> {{departamentId}} <br/>
+    <button (click)="goPrevious()">Previous</button>
+    <button (click)="goNext()">Next</button>
+    <p>
+        <button (click)="showOverview()">Overview</button>
+        <button (click)="showContact()">Contact</button>
+    </p>
+    <router-outlet></router-outlet>
+    <br/>
+    <button (click)="goDepartaments()">Back to departaments</button>
+</div>
